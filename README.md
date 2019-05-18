@@ -32,18 +32,32 @@ Create a new CD74HC4067 object, specifying the control pins, s0 s1, s2, s3.
 SetMux my_mux(4, 5, 6, 7); 
 ```
 
-or
+or  s0 s1, s2, s3, number of C_out pin used, enable pin.
 
 ```c
 SetMux my_mux(4, 5, 6, 7, 5, 8);
 ```
 
-
+*here, c0 to c4 (5 pins) are used, and EN is connected to Pin 8*
 
 Set the channel using the .channel() function
 
 ```c
 my_mux.channel(8);
+```
+
+
+
+### List of usage
+
+```c
+	void begin(); //when EN is uesd. Enable EN.
+	void printDebug(); //print all messages to Serial
+	void disable(); //when EN is uesd. Disable EN.
+	void next(); //switch to next C Pin
+	void last(); //switch to last C Pin
+	void channel(int channel); //switch to channel Pin
+	int current(); //return current C pin
 ```
 
 
