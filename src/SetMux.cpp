@@ -1,7 +1,9 @@
 /*
-  Multiplexer.cpp - Library for using the CD74HC4067 multiplexer.
-  April 18, 2016.
-  LGPL 3.0
+  SetMux.cpp
+   - Library for using the CD74HC4067 multiplexer.
+  may 18, 2019.
+  https://github.com/bingcheng1998/SetupMux
+  MIT License
 */
 
 #include "Arduino.h"

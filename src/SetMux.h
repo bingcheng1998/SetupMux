@@ -1,3 +1,10 @@
+/*
+  SetMux.h
+   - Library for using the CD74HC4067 multiplexer.
+  may 18, 2019.
+  https://github.com/bingcheng1998/SetupMux
+  MIT License
+*/
 #ifndef SETMUX_h
 #define SETMUX_h
 
