@@ -47,30 +47,30 @@ SetMux::SetMux(int s0, int s1, int s2, int s3, int size, int en)
 
 void SetMux::begin()
 {
-	if (en != -1){
+	if (_en != -1){
 		digitalWrite(_en, LOW);
 	}
 }
 void SetMux::printDebug()
 {
-	Serial.print('s0 = ');
+	Serial.print("s0 = ");
 	Serial.print(_s0);
-	Serial.print(', s1 = ');
+	Serial.print(", s1 = ");
 	Serial.print(_s1);
-	Serial.print(', s2 = ');
+	Serial.print(", s2 = ");
 	Serial.print(_s2);
-	Serial.print(', s3 = ');
+	Serial.print(", s3 = ");
 	Serial.print(_s3);
-	Serial.print(', en = ');
+	Serial.print(", en = ");
 	Serial.print(_en);
-	Serial.print(', size = ');
+	Serial.print(", size = ");
 	Serial.print(_size);
-	Serial.print(', current channel = ');
+	Serial.print(", current channel = ");
 	Serial.println(_channel);
 }
 void SetMux::disable()
 {
-	if (en != -1){
+	if (_en != -1){
 		digitalWrite(_en, HIGH);
 	}
 }

@@ -9,7 +9,7 @@ extern int _g_channel_truth_table[16][4];
 class SetMux
 {
 public:
-	SetMux(int s0, int s1, int s2, int s3, int size = 16; int en = -1); 
+	SetMux(int s0, int s1, int s2, int s3, int size = 16, int en = -1); 
 	//初始化，设置引脚
 	void begin(); //启动
 	void printDebug(); //打印所有信息
